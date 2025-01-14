@@ -1,9 +1,36 @@
-<html>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sectors Canvas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-  <h1>Mick</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+    <div id="container">
+        <!-- Side Panel -->
+        <div id="side-panel">
+            <h2>Sectors</h2>
+            <ul id="sector-list">
+                <!-- Sector names will be added here -->
+            </ul>
+            <button id="add-sector-btn">Add Sector</button>
+        </div>
+        <!-- Canvas Area -->
+        <div id="canvas">
+            <!-- Frames will be added here -->
+        </div>
+    </div>
 
+    <!-- Add Sector Dialog -->
+    <div id="dialog-overlay" class="hidden">
+        <div id="dialog-box">
+            <h3>Add a New Sector</h3>
+            <input type="text" id="sector-name-input" placeholder="Enter sector name" />
+            <div id="error-message" class="error"></div>
+            <button id="submit-btn">Add Sector</button>
+            <button id="cancel-btn">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
